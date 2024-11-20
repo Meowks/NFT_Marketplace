@@ -249,10 +249,10 @@ h1{
   grid-template-rows: auto 1fr auto;
   gap: 15px;
 
-  min-width: 315px;
-  flex-basis: 315px;
+  min-width: 313px;
+  flex-basis: 313px;
   flex-grow: 1;
-  max-width: 330px;
+  max-width: 328px;
 }
 .numberPicpures{
   display: flex;
@@ -1218,6 +1218,10 @@ color: #2B2B2B;
   .header{
     align-items: center;
   }
+
+  /* Шестая секция */
+
+ 
 }
 
 /* media на 834 */
@@ -1364,6 +1368,9 @@ color: #2B2B2B;
   .setAvaBtn h2{
     font-size: 38px;
   }
+  .avatarCont{
+    height: 44px;
+  }
   .mainMushrumCont{
     height: calc(590px + (630 - 590) * ((100vw - 375px) / (834 - 375)));
     background-size: calc(550px + (834 - 550) * ((100vw - 375px) / (834 - 375)));
@@ -1373,7 +1380,7 @@ color: #2B2B2B;
     margin-left: calc(30px + (82 - 30) * ((100vw - 375px) / (834 - 375)));
   }
   .timerCont{
-    margin-left: calc(30px + (82 - 30) * ((100vw - 375px) / (834 - 375)));
+    /* margin-left: calc(30px + (82 - 30) * ((100vw - 375px) / (834 - 375))); */
   }
   .buttonMushrumMob{
     margin-left: calc(30px + (82 - 30) * ((100vw - 375px) / (834 - 375)));
@@ -1405,7 +1412,7 @@ color: #2B2B2B;
   }
   .titleText p{
     font-size: 16px;
-    width: 315px;
+    width: 280px;
   }
 }
 
@@ -1510,8 +1517,8 @@ color: #2B2B2B;
     margin-left: 30px;
     margin-bottom: 30px;
     margin-right: 0;
-
   }
+  
   .buttonMushrumMob{
     display: flex;
 
@@ -1600,6 +1607,9 @@ color: #2B2B2B;
   .BtnInBtn{
     width: 315px;
   }
+  .titleText p{
+    width: 315px;
+  }
 
   /* Девятая секция */
 
@@ -1644,6 +1654,12 @@ color: #2B2B2B;
   }
 }
 
+
+@media(max-width:400px){
+  .setAvaBtn h2{
+    width: 250px;
+  }
+}
 
 
 @media(max-width:375px){
@@ -1697,10 +1713,11 @@ color: #2B2B2B;
     width: calc(270px + (315 - 270) * ((100vw - 320px) / (375 - 320)));
   }
   .gridCards{
-    max-width: 270px;
+    /* max-width: calc(270px + (330 - 270) * ((100vw - 320px) / (375 - 320))); */
+    width: calc(270px + (315 - 270) * ((100vw - 320px) / (375 - 320)));
   }
   .gridCards img{
-    margin-left: 5px;
+    margin-left: calc(5px + (20 - 5) * ((100vw - 320px) / (375 - 320)));
   }
   .buttonRocketMobile{
     width: calc(270px + (315 - 270) * ((100vw - 320px) / (375 - 320)));
@@ -1714,6 +1731,9 @@ color: #2B2B2B;
 
    /* Пятая секция */
 
+   .discoverHeder h3{
+    font-size: calc(27px + (28 - 27) * ((100vw - 320px) / (375 - 320)));
+   }
    .discoverCard{
     width: calc(270px + (315 - 270) * ((100vw - 320px) / (375 - 320)));
    }
@@ -1724,7 +1744,7 @@ color: #2B2B2B;
    /* Шестая секция */
 
    .avatarCont{
-    height: calc(38px + (44 - 38) * ((100vw - 320px) / (375 - 320)));
+    height: calc(42px + (44 - 42) * ((100vw - 320px) / (375 - 320)));
    }
    .timerCont{
     width: calc(260px + (315 - 260) * ((100vw - 320px) / (375 - 320)));
