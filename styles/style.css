@@ -9,6 +9,9 @@ body{
     color: #FFFFFF;
     font-family: WorkSans;
 }
+a{
+  text-decoration: none;
+}
 
 @font-face {
     font-family: WorkSans;
@@ -96,6 +99,10 @@ section{
   gap: 12px;
   font-size: 16px;
   line-height: 137%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Первая секция */
@@ -142,6 +149,11 @@ h1{
   width: 224px;
   height: 60px;
   cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
 }
 .purpBtn img{
   color: #FFFFFF;
@@ -219,19 +231,22 @@ h1{
   margin-bottom: calc(40px + (60 - 40) * ((100vw - 834px) / (1280 - 834)));
 }
 
-.pictureCardsContainer{
+.pictureCardsContainer>ul{
   display: flex;
   justify-content: space-between;
-  gap: 15px;
+  /* gap: 30px; */
 }
+
+
 .pictureCards{
-  width: 330px;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto 1fr auto;
   gap: 15px;
 
-  flex-basis: 280px;
+  min-width: 315px;
+  flex-basis: 315px;
   flex-grow: 1;
   max-width: 330px;
 }
@@ -255,6 +270,15 @@ h1{
 .primaryPhotoSecond{
   width: 100%;
 }
+.primaryPhotoSecondButton{
+ margin: 0;
+ padding: 0;
+ border: 0;
+ outline: none;
+ background-color: transparent;
+ cursor: pointer;
+ color: #FFFFFF;
+}
 .primaryPhotoThird{
   width: 100%;
 }
@@ -277,6 +301,8 @@ h1{
   font-size: 16px;
   line-height: 137%;
 }
+
+
 
 /* Третья секция */
 
@@ -801,7 +827,7 @@ h1{
   line-height: 118%;
   margin-bottom: 10px;
 }
-.titleText p{
+.titleText>p{
   display: block;
   text-transform: capitalize;
   font-size: calc(16px + (22 - 16) * ((100vw - 834px) / (1280 - 834)));
@@ -809,13 +835,6 @@ h1{
   width: calc(290px + (425 - 290) * ((100vw - 834px) / (1280 - 834)));
 }
 
-.btnHead{
-  position: relative;
-  width: auto;
-  height: 60px;
-  border-radius: 20px;
-  margin-top: 40px;
-}
 .mainBtn{
   display: flex;
 
@@ -826,7 +845,7 @@ h1{
   color: #2B2B2B;
   background-color: #FFFFFF;
   border-radius: 20px;
-  width: 100%;
+  width: 99%;
   height: 60px;
   cursor: pointer;
   border-color: rgba(0, 0, 0, 0);
@@ -834,6 +853,49 @@ h1{
   align-items: center;
   justify-content: start;
 }
+
+.btnHead{
+  position: relative;
+  width: auto;
+  height: 60px;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+
+.btnSpan{
+  margin-left: 20px;
+  border: none;
+  width: 70%;
+  height: 50%;
+  padding-left: 5px;
+  outline: none;
+  
+}
+.btnSpan::placeholder{
+  color: #2B2B2B;
+  font-family: WorkSans;
+  font-size: 16px;
+  line-height: 137%;
+}
+.btnSpanDouble{
+  margin-left: 20px;
+  border: none;
+  width: 70%;
+  height: 50%;
+  padding-left: 5px;
+  outline: none;
+  display: none;
+}
+.btnSpanDouble::placeholder{
+  text-transform: capitalize;
+  color: #2B2B2B;
+  font-family: WorkSans;
+  font-size: 16px;
+  line-height: 137%;
+}
+
+
+
 .btnSpan{
   margin-left: 20px;
 }
@@ -941,7 +1003,7 @@ h1{
   color: #2B2B2B;
   background-color: #FFFFFF;
   border-radius: 20px;
-  width: 100%;
+  width: 99%;
   height: 60px;
   cursor: pointer;
   border-color: rgba(0, 0, 0, 0);
@@ -954,6 +1016,33 @@ color: #2B2B2B;
 }
 .btnSpanFoot{
   margin-left: 20px;
+  border: none;
+  width: 70%;
+  height: 50%;
+  padding-left: 5px;
+  outline: none;
+}
+.btnSpanFoot::placeholder{
+  color: #2B2B2B;
+  font-family: WorkSans;
+  font-size: 16px;
+  line-height: 137%;
+}
+.btnSpanFootDouble{
+  margin-left: 20px;
+  border: none;
+  width: 70%;
+  height: 50%;
+  padding-left: 5px;
+  outline: none;
+}
+.btnSpanFootDouble::placeholder{
+  text-transform: capitalize;
+  color: #2B2B2B;
+  font-family: WorkSans;
+  font-size: 16px;
+  line-height: 137%;
+  display: none;
 }
 .BtnInBtnFoot{
   display: flex;
@@ -1005,9 +1094,9 @@ color: #2B2B2B;
 /* media на 1200 */
 
 @media(max-width:1200px){
-  .pictureCardsSpaceman{
+  /* .pictureCardsSpaceman{
     display: none;
-  }
+  } */
 
   /* Восьмая секция */
 
@@ -1052,6 +1141,13 @@ color: #2B2B2B;
   }
   .joinBtn span{
     width: 100%;
+  }
+  .btnSpan{
+    display: none;
+  }
+  .btnSpanDouble{
+    display: inline;
+
   }
 }
 
@@ -1326,9 +1422,9 @@ color: #2B2B2B;
     width: 315px;
     margin-top: 40px;
   }
-  .pictureCardsMushrum{
+  /* .pictureCardsMushrum{
     display: none;
-  }
+  } */
 
   .buttonRocketMobile{
     display: flex;
@@ -1531,6 +1627,15 @@ color: #2B2B2B;
   }
   .BtnInBtnFoot img {
     display: inline;
+  }
+  .btnSpanFoot{
+    display: none;
+  }
+  .btnSpanFootDouble{
+    display: inline;
+  }
+  .splide__slide{
+    width: calc(315px + (330 - 315) * ((100vw - 834px) / (1280 - 834)));
   }
 }
 
