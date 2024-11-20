@@ -1,6 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+
+
+    /* border: solid 0.5px;
+    border-color: red; */
+
 }
 
 /* calc(330px + (510 - 330) * ((100vw - 834px) / (1280 - 834))) */
@@ -234,7 +239,6 @@ h1{
 .pictureCardsContainer>ul{
   display: flex;
   justify-content: space-between;
-  /* gap: 30px; */
 }
 
 
@@ -1439,6 +1443,7 @@ color: #2B2B2B;
     height: 60px;
     background-color: rgba(0, 0, 0, 0);
     cursor: pointer;
+    
   
     color: #FFFFFF;
     font-size: 16px;
@@ -1642,6 +1647,148 @@ color: #2B2B2B;
 
 
 @media(max-width:375px){
+
+  /* Первый экран */
+
+  h1{
+    width: calc(270px + (315 - 270) * ((100vw - 320px) / (375 - 320)));
+    font-size: calc(24px + (28 - 24) * ((100vw - 320px) / (375 - 320)));
+    line-height: 108%;
+  }
+  .information{
+    width: calc(270px + (315 - 270) * ((100vw - 320px) / (375 - 320)));
+  }
+  .spaceWalking{
+    width: calc(285px + (315 - 285) * ((100vw - 320px) / (375 - 320)));
+  }
+  .information p{
+    width: 280px;
+    font-size: calc(13px + (16 - 13) * ((100vw - 320px) / (375 - 320)));
+    line-height: 159%;
+  }
+  .purpBtn{
+    width: calc(270px + (315 - 270) * ((100vw - 320px) / (375 - 320)));
+  }
+  .spaceAvatarContainer{
+    width: calc(270px + (315 - 270) * ((100vw - 320px) / (375 - 320)));
+  }
+  .spaseMan{
+    width: 100%;
+  }
+  .minAdept{
+    width: 290px;
+  }
+  .minAdept{
+    width: calc(285px + (315 - 285) * ((100vw - 320px) / (375 - 320)));
+  }
+
+  /* Второй экран */
+
+  .splide__slide{
+    width: calc(270px + (315 - 270) * ((100vw - 320px) / (375 - 320)));
+  }
+  .pictureCards{
+    min-width: 270px;
+  }
+
+  /* Третий экран */
+
+  .gridPictures{
+    width: calc(270px + (315 - 270) * ((100vw - 320px) / (375 - 320)));
+  }
+  .gridCards{
+    max-width: 270px;
+  }
+  .gridCards img{
+    margin-left: 5px;
+  }
+  .buttonRocketMobile{
+    width: calc(270px + (315 - 270) * ((100vw - 320px) / (375 - 320)));
+  }
+
+  /* Четвертая секция */
+
+   .containerCategories{
+    width: calc(125px + (150 - 125) * ((100vw - 320px) / (375 - 320)));
+   }
+
+   /* Пятая секция */
+
+   .discoverCard{
+    width: calc(270px + (315 - 270) * ((100vw - 320px) / (375 - 320)));
+   }
+   .buttonRocketMobile{
+    width: calc(268px + (315 - 268) * ((100vw - 320px) / (375 - 320)));
+   }
+
+   /* Шестая секция */
+
+   .avatarCont{
+    height: calc(38px + (44 - 38) * ((100vw - 320px) / (375 - 320)));
+   }
+   .timerCont{
+    width: calc(260px + (315 - 260) * ((100vw - 320px) / (375 - 320)));
+   }
+   .buttonMushrumMob{
+    width: calc(260px + (315 - 260) * ((100vw - 320px) / (375 - 320)));
+   }
+
+   /* Седьмая секция */
+
+   .howItWorksContainer{
+    width: calc(270px + (315 - 270) * ((100vw - 320px) / (375 - 320)));
+   }
+   .howItWorks img{
+      margin-left: 5px;
+      margin-right: 5px;
+   }
+
+   /* Восмая секция */
+
+   #spmanMobil{
+    width: calc(270px + (315 - 270) * ((100vw - 320px) / (375 - 320)));
+   }
+   .titleText>p{
+    width: calc(270px + (315 - 270) * ((100vw - 320px) / (375 - 320)));
+   }
+   .btnHead{
+    width: calc(270px + (315 - 270) * ((100vw - 320px) / (375 - 320)));
+   }
+   .titleText h3{
+    width: calc(270px + (315 - 270) * ((100vw - 320px) / (375 - 320)));
+   }
+   .titleText p{
+    width: calc(270px + (315 - 270) * ((100vw - 320px) / (375 - 320)));
+   }
+   .mainBtn{
+    width: calc(270px + (315 - 270) * ((100vw - 320px) / (375 - 320)));
+   }
+   .BtnInBtn{
+    width: calc(270px + (315 - 270) * ((100vw - 320px) / (375 - 320)));
+   }
+
+   /* Девятая секция */
+
+   .btnHeadFoot{
+    width: calc(270px + (315 - 270) * ((100vw - 320px) / (375 - 320)));
+   }
+   .titleText p{
+    width: calc(270px + (315 - 270) * ((100vw - 320px) / (375 - 320)));
+   }
+   .mainBtnFoot{
+    width: calc(270px + (315 - 270) * ((100vw - 320px) / (375 - 320)));
+   }
+   .BtnInBtnFoot{
+    width: calc(270px + (315 - 270) * ((100vw - 320px) / (375 - 320)));
+   }
+
+
+
+
+
+
+
+
   .titleText h3{
     font-size: calc(24px + (28 - 24) * ((100vw - 320px) / (375 - 320)));
   }
